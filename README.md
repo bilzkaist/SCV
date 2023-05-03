@@ -25,6 +25,24 @@ We expect to create a robust model capable of detecting and classifying vulnerab
 ### Conclusion:
 We believe that our research will help developers identify potential vulnerabilities in their smart contracts and prevent significant losses in digital assets. We plan to make our dataset and models available on the HuggingFace hub, and we encourage researchers and developers to explore them further.
 
+## How to install
+In order to run this code on your machine, simply code the repository with:
+```sh
+git clone https://github.com/bilzkaist/SCV.git
+```
+
+then install `torch` and `torchvision` with CUDA support according to your system's requirements (see [Pytorch docs](https://pytorch.org/get-started/locally/) for more info). Finally, you can install all the other project requirements by running the following commands from the folder _smart-contracts-vulnerabilities_.
+```sh
+pip install -U pip
+pip install -r requirements.txt
+```
+
+In order to start a training, simply create a .yaml config file according to [these](https://github.com/bilzkaist/SCV/blob/main/docs/config.md) specifications and then run
+
+```sh
+python main.py path/to/your/config/file.yaml
+```
+
 ## References
 <a id="1">[1]</a> Huang, T. H.-D. (2018). Hunting the Ethereum Smart Contract: Color-inspired Inspection of Potential Attacks. ArXiv:1807.01868 [Cs]. http://arxiv.org/abs/1807.01868
 
