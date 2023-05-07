@@ -9,13 +9,13 @@ DATASET:
   RGB_IMAGES: true
   USE_IMAGENET_STATS: false
 MODEL:
-  NAME: 1d_resnet
+  NAME: resnet
   N_CLASSES: 5
 TRAINING:
   CHECKPOINTS:
     DECREASING: false
     MONITOR: val_acc
-    PATH: checkpoints/1d_resnet.pkl
+    PATH: checkpoints/resnet.pkl
     USE: true
   EARLY_STOPPING:
     DECREASING: false
@@ -24,7 +24,7 @@ TRAINING:
     USE: true
   LAYERS_TO_FINETUNE: 6
   LOGGER:
-    RUN_TAG: 1d_resnet
+    RUN_TAG: resnet
     USE: true
   LOSS: binary_crossentropy
   N_EPOCHS: 100
@@ -43,4 +43,4 @@ TRAINING:
     - precision
     - recall
     USE: true
-  TRAIN_FROM_SCRATCH: true
+  TRAIN_FROM_SCRATCH: false
