@@ -16,7 +16,7 @@ from src.data.stats import GetMeanStd
 from src.utils.registry import REGISTRY
 from src.utils.trainer import Trainer
 from src.modeling.solver.loss import SigmoidFocalLoss
-from src.modeling.network.backbone import ResNet1D, ResNetModel, InceptionModel, LSTMNetwork
+from src.modeling.network.backbone import ResNet1D, ResNetModel, InceptionModel, LSTMNetwork, BilFormer
 from src.data.transform import generate_image_and_binary_label, generate_image_and_label
 from src.data.transform import generate_signal_and_binary_label, generate_signal_and_label
 from src.utils.callbacks import MetricsCallback, EarlyStopper, TensorBoardLogger, CheckpointSaver
